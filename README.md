@@ -37,32 +37,25 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# Aprendiendo React desde cero
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Reglas JSX
+ 1. Toda etiqueta debe cerrarse
+ 2. Los componentes deben devolver UN sólo elemento padre
+ 3. Apoyarse de los fragment cuando necesito devolver DOS elementos
+ 4. Fragment =>  <> HIJOS </>
+ 5. img siempre se cierra <img src="ruta imagen" />
+ 6. class => className
+ 7. atributo for => htmlFor
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Expresiones en JSX son => { javascript } 
 
-### Code Splitting
+src={} => propiedades
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+En react existen dos tipos de componentes, presentacionales o componente de función  se limita a presentarse en pantalla y no tiene mucha lógica, reutilizando una estructura declarada.
 
-### Analyzing the Bundle Size
+props => es un objeto en donde se encuantran las propiedades
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Libreria para tener organizada las propiedades
+### `npm i prop-types`
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
