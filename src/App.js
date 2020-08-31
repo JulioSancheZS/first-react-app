@@ -1,6 +1,8 @@
 import React from 'react';
-import Curso from "./Curso"; //importar el componente curso
-import "./styles/styles.scss"
+import "./styles/styles.scss";
+import Curso from "./component/Curso"; //importar el componente curso
+import Banner from "./component/Banner";
+import Formulario from './component/Formulario';
 
 //Array de objetos
 const cursos = [
@@ -36,26 +38,15 @@ const App = () => (
 
   // Los componentes tiene que devolver un ELEMENTO
   <>
-    <div className="main-banner img-container l-section" id="main-banner">
-      <div className="ed-grid lg-grid-6">
-        <div className="lg-cols-4 lg-x-2">
-          <img className="main-banner__img" alt="banner" src="https://notagamer.net/wp-content/uploads/2020/02/imm-yi-full.jpg" />
-          <div className="main-banner__data s-center">
-            <p className="t2 s-mb-0">Aprendiendo React</p>
-            <p> Conocimiento</p>
-          
-          </div>
-        </div>
-      </div>
-    </div>
+    <Banner />
 
     <div className="ed-grid m-grid-3">
      {
-       cursos.map( c => <Curso title={c.title} image={c.image} price={c.price} foto={c.foto} nombre={c.nombre} apellido={c.apellido} /> )
+       cursos.map( c => <Curso title={c.title} image={c.image}  nombre={c.nombre} apellido={c.apellido} foto={c.foto} /> )
      }  
     </div>
-
-    
+    <Formulario name="elemento"/>
+     
   </>
   //Retornar elemento
 

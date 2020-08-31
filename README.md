@@ -59,3 +59,13 @@ props => es un objeto en donde se encuantran las propiedades
 Libreria para tener organizada las propiedades
 ### `npm i prop-types`
 
+## El estado de los componentes
+### Componente de clase
+Componente de tipo clase
+
+El estado del componente hace referencia a lo que nosotros necesitamos de
+información de nuestro componente que vaya cambiando, esa información que se
+ va actualizar.
+
+
+

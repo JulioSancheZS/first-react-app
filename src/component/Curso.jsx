@@ -19,7 +19,7 @@ import PropTypes from 'prop-types' //importamos la libreria
 //Componente Curso
 //el componente puede recibir propiedades
 //Esto de abajo es JSX, no es html 
-const Curso = ({title,image,price,nombre,apellido,foto}) =>(  
+const Curso = ({title,image,nombre,apellido,foto}) =>(  
       
     <article className="card">
       
@@ -42,9 +42,7 @@ const Curso = ({title,image,price,nombre,apellido,foto}) =>(
               <span className="small">{nombre} {apellido}</span>
             </div>
           </div>
-          <div className="s-main-center">
-            <a className="button--ghost-alert button--tiny" href="https://google.com">{`$ ${price}`}</a>
-          </div>
+
         </div>
       </article>
 
@@ -56,7 +54,6 @@ const Curso = ({title,image,price,nombre,apellido,foto}) =>(
 Curso.propTypes={
   title: PropTypes.string,
   image: PropTypes.string,
-  price: PropTypes.string,
   nombre: PropTypes.string,
   apellido: PropTypes.string,
   foto: PropTypes.string
@@ -65,7 +62,6 @@ Curso.propTypes={
 Curso.defaultProps = {
   title: "no se concontro titulo",
   image: "https://increasify.com.au/wp-content/uploads/2016/08/default-image.png",
-  price: "--",
   nombre: "Fulanito",
   apellido: "Sultanito",
   foto: "https://www.researchgate.net/profile/Maria_Monreal2/publication/315108532/figure/fig1/AS:472492935520261@1489662502634/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png"
