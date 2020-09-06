@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'; 
+import App from './component/App'; 
 
 /*
   El metodo render renderiza la clase, necesita dos cosas, UN ELEMENTO

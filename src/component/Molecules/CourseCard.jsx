@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types' //importamos la libreria
+import { Link } from 'react-router-dom'; //Importamoe link
 
 //const persona = {"nombre": "Julio", "apellido": "Sánchez", "edad": 24} //Objeto
 
@@ -19,13 +20,14 @@ import PropTypes from 'prop-types' //importamos la libreria
 //Componente Curso
 //el componente puede recibir propiedades
 //Esto de abajo es JSX, no es html 
-const Curso = ({title,image,nombre,apellido,foto}) =>(  
+const CourseCard = ({id,title,image,nombre,apellido,foto}) =>(  
       
     <article className="card">
       
         <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
-          
+          <Link to={`/cursos/${id}`}>
             <img src={image} alt={title}/>
+          </Link>
          
         </div>
         <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
@@ -51,7 +53,7 @@ const Curso = ({title,image,nombre,apellido,foto}) =>(
 // se limita a presentarse en pantalla y no tiene mucha lógica, reutilizando una estructura declarada
 
 //Propiedades
-Curso.propTypes={
+CourseCard.propTypes={
   title: PropTypes.string,
   image: PropTypes.string,
   nombre: PropTypes.string,
@@ -59,7 +61,7 @@ Curso.propTypes={
   foto: PropTypes.string
 }
 //Propiedades por defecto para el componente en caso de que no le pase datos al componente
-Curso.defaultProps = {
+CourseCard.defaultProps = {
   title: "no se concontro titulo",
   image: "https://increasify.com.au/wp-content/uploads/2016/08/default-image.png",
   nombre: "Fulanito",
@@ -67,4 +69,4 @@ Curso.defaultProps = {
   foto: "https://www.researchgate.net/profile/Maria_Monreal2/publication/315108532/figure/fig1/AS:472492935520261@1489662502634/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png"
 }
 
-export default Curso
+export default CourseCard

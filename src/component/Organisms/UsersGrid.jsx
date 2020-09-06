@@ -1,0 +1,25 @@
+import React from 'react'
+import UsersCard from '../Molecules/UsersCard'
+import withLoader from '../HOC/withLoader'
+
+const UsersGrid = ({users}) => (
+
+    <div className="ed-grid">
+    <h1>Users</h1>
+    <div className="ed-grid s-grid-2 m-grid-3 lg-grid-4">
+        {     
+            users.map(u => ( 
+                <UsersCard 
+                key={u.id}
+                name={u.name}
+                username={u.username}
+                email={u.email}
+                />           
+                    
+            ))
+        }
+    </div>
+</div>
+)
+
+export default withLoader("users",UsersGrid) 

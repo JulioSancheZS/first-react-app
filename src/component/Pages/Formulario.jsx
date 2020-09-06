@@ -46,6 +46,7 @@ class Formulario extends Component {
                             type="text" 
                             onChange={this.cambiarNombre}
                             />
+                            
                         </div>
                         <div className="form__item">
                             <label>Correo Electrónico</label>

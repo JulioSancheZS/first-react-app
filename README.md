@@ -67,5 +67,24 @@ El estado del componente hace referencia a lo que nosotros necesitamos de
 información de nuestro componente que vaya cambiando, esa información que se
  va actualizar.
 
+ # Rutas
+El componente Route necesita dos propiedades, el path y exact = es bool (se usa para el HOME de la aplicación casi siempre) y el component que es el componente
 
+# Refactorización de código
+Usando Atomic Design
+
+# Componente de orden superior
+nos permite reutilizar lógia a lo largo de nuestra aplicacion en diversos componentes
+ Que es?
+ es una función que resive un componente, lo procesa segun la lógica y devuelve otro componente luego de ser procesado.
+ 
+
+ # Hooks
+ Tenemos dos hooks disponibles en react
+ 1. useState => nos permite utilizar el estado
+    - useState: es una función que resive como parametro el estado que queremos utilizar y devuelve un arreglo
+    - useState llegan dos elementos, el estado como tal y un call back que se pued utilizar para modificar el estado nuevamente.
+  2. useEffect =>   simula el ciclo de vida de un componente 
+    - resive como parametro un call back y en el segundo son reglas
+    - se llamara cuando el componente se renderize 
 
